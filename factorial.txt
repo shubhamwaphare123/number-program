@@ -1,0 +1,36 @@
+package PracticeQuestion;
+
+import java.util.Scanner;
+
+public class factorial {
+
+	public factorial() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public  int fact(int n) {
+		
+		int pro =1;
+		for ( ;n>0;n--) {
+			
+			pro=pro*n;
+		}
+		System.out.println(pro);
+		
+		return(0);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter a number:-");
+		int n =sc.nextInt();
+		factorial f1 = new factorial();
+				
+		System.out.println(f1.fact(n));
+		
+
+	}
+
+}

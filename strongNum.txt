@@ -1,0 +1,43 @@
+package PracticeQuestion;
+
+import java.util.Scanner;
+
+public class Strong {
+	
+	public boolean isSTrong(int n) {
+		int temp = n;
+		int sum=0;
+		for(;n>0;n=n/10) {
+			int last_digit = n%10;
+			int pro=1;
+			
+			for (int i = last_digit; i>0; i-- ) {
+				pro*=i;
+				
+					
+			}
+			sum+=pro;
+			
+	}
+//		System.out.println(pro+"i am fact");
+//		System.out.println(sum+"i am sum");
+//		
+		if (sum == temp) {
+			return true;
+		}else {
+			return false;
+		}
+		
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n= sc.nextInt();
+		Strong s1 = new Strong();
+		boolean res = s1.isSTrong(n);
+		System.out.println(res);
+	}
+
+}
