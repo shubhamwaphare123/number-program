@@ -1,0 +1,45 @@
+package study;
+import java.util.*;
+
+public class tables {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int j = sc.nextInt();
+		int sum = 0;
+		int sum1 = 0; int a;
+		System.out.println("table of"+n+"is" );
+		for(int i = 1;i<=j;i++) {
+			
+				System.out.println(n+"X"+i+"="+(sum = n*i));
+			
+			
+				
+			}
+	
+	}
+
+}
+
+
+/*
+
+7
+14
+table of7is
+7X1=7
+7X2=14
+7X3=21
+7X4=28
+7X5=35
+7X6=42
+7X7=49
+7X8=56
+7X9=63
+7X10=70
+7X11=77
+7X12=84
+7X13=91
+7X14=98
+
+*/
