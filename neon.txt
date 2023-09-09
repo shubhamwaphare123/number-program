@@ -1,0 +1,36 @@
+package PracticeQuestion;
+
+import java.util.Scanner;
+
+public class Neon {
+	public boolean isNeon(int n) {
+		int square = n*n;int sum = 0;//
+		for (;square>0;square/=10) {
+			int last_digit= square%10;
+			sum +=last_digit;
+		}
+	
+	if (sum==n){
+		return true;
+	}else {
+		return false;
+	}
+	
+}
+
+	public static void main(String args[]) {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter a number");
+		int n =sc. nextInt();
+		Neon n1=new Neon();
+		
+		boolean res = n1.isNeon(n);
+		System.out.println(res );
+		
+		
+		
+		
+		}
+}
+
+

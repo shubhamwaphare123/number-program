@@ -1,0 +1,51 @@
+package PracticeQuestion;
+
+public class Automorphic {
+	
+	
+	public static void isAutonum(int n) {
+		int temp;
+		 temp=n;
+		int count1=0;
+		int rev=0;
+		int rev2=0;
+		int count2=0;
+		int square=01;
+		for (;n>0;n=n/10) {
+			count1++;
+		}
+		n=temp;
+		for (;n>0;n=n/10) {
+			int last_dig=n%10;
+			count2++;
+			if (count2 !=count1) {
+				rev=rev*10+last_dig;
+			}
+			
+		}
+		
+		for (;rev>0;rev=rev/10) {
+			int last_dig2=rev%10;
+			rev2=rev2*10+last_dig2;
+			
+			
+		}
+		square=rev2*rev2;
+		
+		if(square==temp) {
+			System.out.println("yes");
+		}else {
+			System.out.println("no");
+		}
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		isAutonum(625);
+
+	}
+
+}

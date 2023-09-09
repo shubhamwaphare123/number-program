@@ -1,0 +1,50 @@
+
+public class Armstrong1 {
+	public boolean isArm(int n) {
+		int count = 0; int z=n;int sum = 0;
+		for(;z>0;) {
+			z=z/10;
+			count++;//count number of digit
+		}
+		z=n;
+		for(;z>0;z=z/10 ) {
+			int last_digit = z%10;//take last number
+			int pro = 1;
+			for(int i = 1;i<=count;i++) {
+				pro = pro*last_digit;//multiply last digit with count
+				
+			
+			}
+			sum = sum+pro;
+			System.out.println(sum);
+					
+		}
+		
+		if (sum == n) {
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+
+
+
+    public static void main(String args[]) {
+    	Scanner sc = new Scanner(System.in);
+    	System.out.println("enter a number");
+    	int n =sc. nextInt();
+    	
+    	Armstrong a1 = new Armstrong();
+    	boolean result = a1.isArm(n);
+    	System.out.println(result);
+    	
+    	
+    }
+    	
+	
+    }
+	
+
+	
+

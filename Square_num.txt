@@ -1,0 +1,27 @@
+package PracticeQuestion;
+
+import java.util.Scanner;
+
+public class SquareNum {
+
+	
+	public static int isSquare(int a,int b){
+		int product =1;
+		for (int i=1;i<=b;i++) {
+			product=product*a;
+		}
+//		System.out.println(product);
+		return product;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a number whose power you want");
+		int a=sc.nextInt();
+		System.out.println("enter a number  power you want");
+		int b=sc.nextInt();
+		System.out.println(SquareNum.isSquare(a, b));
+		;
+				
+	}
+}
